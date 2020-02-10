@@ -1,0 +1,42 @@
+// Colores
+
+$white:#ffffff;
+$platinum:#E8E8E8;
+$gray:#BABABA;
+$dark-salmon:#EE9480;
+$melon:#F4BAAE;
+$pale-pink:#FADFDA;
+$ball-blue:#2AB7CA;
+$middle-blue: #77D1DD;
+$blue-lagoon: #B1E4EB;
+$onyx: #333745;
+$spanish-gray: #8F9199;
+$lavender-gray: #C7C8CC;
+$raisin-black:#221D23;
+$nickel:#726F73;
+$silver-chalice: #AEACAF;
+
+$bg-light: $white;
+$bg-dark: $onyx;
+$bg-footer: $raisin-black;
+
+
+// Tipografías
+
+$raleway: 'Raleway', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+$bold:700;
+$regular:400;
+
+
+// font size
+//Tamaño en px, el mixin lo pasa a rems
+$xxxxx-large:50px;
+$xxxx-large:45px;
+$xxx-large:40px;
+$xx-large:35px;
+$x-large:30px;
+$large:20px;
+$medium:16px;
+$small:14px;
+$x-small:12px;
