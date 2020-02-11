@@ -31,12 +31,23 @@ $regular:400;
 
 // font size
 //Tamaño en px, el mixin lo pasa a rems
-$xxxxx-large:50px;
-$xxxx-large:45px;
-$xxx-large:40px;
-$xx-large:35px;
-$x-large:30px;
-$large:20px;
-$medium:16px;
-$small:14px;
-$x-small:12px;
+
+$xxxxx-large:50;
+$xxxx-large:45;
+$xxx-large:40;
+$xx-large:35;
+$x-large:30;
+$large:20;
+$medium:16;
+$small:14;
+$x-small:12;
+
+
+/*
+// Breakpoints
+$viewport-xsmall: 375px;
+$viewport-medium: 768px;
+$viewport-large: 992px;
+$viewport-xlarge: 1200px;
+*/
+

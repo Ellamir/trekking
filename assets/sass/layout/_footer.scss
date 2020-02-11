@@ -1,10 +1,6 @@
-.footer{
-
-    display: flex;
-    padding-left: 20px;
-
-    .pie{
+footer{
     background-color: $raisin-black;
+    display: flex;
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -17,12 +13,26 @@
             font-family: $open-sans;
             background-color: $raisin-black;
             text-align: center;
+            display: flex;
         }
-
-        ul.menu{
-            display: inline;
-        }
-    }
+        
+    
 
     
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 100px;
+
+    @media only screen and (min-width: 767px) {
+        footer {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          
+          grid-row-gap: 100px;
+        }
+      }
+
 }
