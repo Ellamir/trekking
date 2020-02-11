@@ -1,10 +1,10 @@
-/* 
+/*
 // Breakpoints
 $viewport-xsmall: 375px;
 $viewport-medium: 768px;
 $viewport-large: 992px;
 $viewport-xlarge: 1200px;
-*/ 
+*/
 * {
   margin: 0;
   padding: 0;
@@ -104,10 +104,9 @@ nav {
 header .franja {
   background-image: url("../img/bg-hero.svg");
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position-y: bottom;
   background-position-x: right;
-  width: 100vw;
-  height: 80vh;
+  background-size: 150vw;
 }
 header .franja div.texto {
   width: 80%;
@@ -120,7 +119,7 @@ header .franja div.texto h1 {
 }
 header .franja div.texto p {
   line-height: 1.5rem;
-  padding-bottom: 12rem;
+  padding-bottom: 51vh;
   font-size: medium;
 }
 

@@ -5,16 +5,16 @@ header{
     .franja{
     background-image: url('../img/bg-hero.svg');
     background-repeat: no-repeat;
-    background-position-y: center;
+    background-position-y: bottom;
     background-position-x: right;
-    width: 100vw;
-    height: 80vh;
+    background-size: 150vw;
+    //background-size: 500px;
+    
         
         div.texto{
             width: 80%;
             padding-left: 1.5rem;
-            
-            
+                        
             h1 {
                 font-weight: 700;
                 padding-bottom: 1rem;
@@ -23,7 +23,7 @@ header{
             
             p {
                 line-height: 1.5rem;
-                padding-bottom: 12rem;
+                padding-bottom: 51vh;
                 font-size: medium;
             }
             
