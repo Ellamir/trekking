@@ -1,10 +1,35 @@
-/*
+
 header{
+
+
     .franja{
-    
-    background-image: url(../img/bg-hero.svg);
+    background-image: url('../img/bg-hero.svg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-y: center;
+    background-position-x: right;
+    width: 100vw;
+    height: 80vh;
+        
+        div.texto{
+            width: 30%;
+            padding-left: 1.5rem;
+            text-align-last: justify;
+            h1 {
+                font-weight: 700;
+                padding-bottom: 1rem;
+                font-size: large;
+            }
+            
+            p {
+                line-height: 1.5rem;
+                padding-bottom: 12rem;
+                font-size: medium;
+            }
+            
+        }
+
     }
+        
+    
 }
-*/
+ 
