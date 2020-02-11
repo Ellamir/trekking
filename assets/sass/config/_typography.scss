@@ -3,29 +3,36 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1{
-  font-size: $xxxxx-large;
+  //font-size: $xxxxx-large;
+  @include relative-converter(font-size, rem, $xxxxx-large, 16);
 }
 
 h2{
-  font-size: $xxxx-large;
+  //font-size: $xxxx-large;
+  @include relative-converter(font-size, rem, $xxxx-large, 16);
 }
 
 h3{
-  font-size: $xxx-large;
+  //font-size: $xxx-large;
+  @include relative-converter(font-size, rem, $xxx-large, 16);
 }
 
 h4{
-  font-size: $xx-large;
+  //font-size: $xx-large;
+  @include relative-converter(font-size, rem, $xx-large, 16);
 }
 
 h5{
-  font-size: $x-large;
+  //font-size: $x-large;
+  @include relative-converter(font-size, rem, $x-large, 16);
 }
 
 h6{
-  font-size: $large;
+  //font-size: $large;
+  @include relative-converter(font-size, rem, $large, 16);
 }
 
 p{
-  font-size: $medium;
+  //font-size: $medium;
+  @include relative-converter(font-size, rem, $medium, 16);
 }
