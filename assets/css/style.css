@@ -9877,20 +9877,152 @@ h3 {
 }
 * {
   background-color: white;
-  font-family: raleway regular;
+  font-family: "Raleway", sans-serif 400;
+}
+* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar {
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 35px;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.boton {
+  border: 0px solid;
+  font-family: "Open Sans", sans-serif;
+}
+
+.boton2 {
+  background-color: #2AB7CA;
+  color: #ffffff;
+  padding: 0.5em;
+  border-radius: 8px;
+}
+.boton2:hover {
+  background-color: #77D1DD;
+  color: #ffffff;
+  text-decoration: none;
+}
+.boton2:focus {
+  background-color: #BABABA;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.boton1 {
   background-color: #ffffff;
 }
 
-footer {
+/*
+.caja1__boton{
+  width: 247px;
+  background-color: #2ab7ca;
+  border: 0px solid;
+  color: white;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  font-family: $raleway;
+  font-weight: $bold;
+
+  &:hover{
+    background-color: $middle-blue;
+  }
+
+  &:focus{
+    background-color: $gray;
+  }
+}
+*/
+nav {
+  font-size: medium;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+  grid-row-gap: 100px;
+}
+@media only screen and (min-width: 767px) {
+  main main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }
+}
+
+section .section1 {
+  left: 84px;
+  top: 30%;
+  position: absolute;
+}
+section .section1 h3 {
+  font-weight: 700;
+  padding-right: 10%;
+  padding-bottom: 1rem;
+}
+section .section1 p {
+  padding-right: 22%;
+  line-height: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  padding-left: 20px;
+}
+.footer .pie {
   background-color: #221D23;
   color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 35px;
+}
+.footer .pie ul.menu li, .footer .pie p {
+  padding-right: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #221D23;
+  text-align: center;
+}
+.footer .pie ul.menu {
+  display: inline;
 }
 
 /*
-
 @import 'layout/newsletter';
 @import 'layout/sidebar';
 

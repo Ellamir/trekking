@@ -1,6 +1,28 @@
-footer{
-    background-color: $bg-footer;
+.footer{
+
+    display: flex;
+    padding-left: 20px;
+
+    .pie{
+    background-color: $raisin-black;
     color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 35px;
 
+        ul.menu li, p{
+            padding-right: 20px;
+            color: $white;
+            font-size: $small;
+            font-family: $open-sans;
+            background-color: $raisin-black;
+            text-align: center;
+        }
 
+        ul.menu{
+            display: inline;
+        }
+    }
+
+    
 }

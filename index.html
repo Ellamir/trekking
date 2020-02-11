@@ -1,50 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trekk-In</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    <meta name="author" content="TFW">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trekk-In</title>
+  <!-- Bootstrap 4.1.3 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-
+MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <meta name="author" content="TFW">
   <meta name="description" content="Página de trekking, prueba de SVG">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap" rel="stylesheet">
+
+  <style>
+    .franja{
+    
+    background-image: url(../img/bg-hero.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+  </style>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Acerca de <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Características</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Precios</a>
-            </li>
-            
-          </ul>
 
-          <form class="form-inline my-2 my-lg-0">
-            <a class="nav-link" href="#">Iniciar Sesión</a>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Regístrate</button>
-          </form>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/logo.svg" alt="logo Trekk-In>" width="48px" height="40px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mr-md-auto">
+        <!-- alineó el menu a la izq-->
+        <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Productos</a>
+        <a class="nav-item nav-link" href="#">Contacto</a>
+      </div>
+      <div class="navbar-nav ml-md-auto">
+        <!-- me alineó el menu a la der-->
+        <a class="nav-item nav-link boton boton1 " href="#">Productos</a>
+        <a class="boton2 boton2--hover boton2--small boton2--focus" href="#">Regístrate</a>
 
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- header -->
+    <header>
+      <div class="franja">
+      <h1>Haz Trekking sin Parar</h1>
+      <p>Con Trekk-in te desprocuparas de la estimacion de tu viaje, ya que con unos simples pasos podras definir la
+        mejor ruta a tomar con tus compañeros de expedicion</p></div>
+    </header>
+    <!-- seccion grafico -->
+    <section class="section1">
+      <img src="assets/img/bar-graph.svg">
+      <h3>Estadísticas de tu progreso</h3>
+      <p>Podrás ver todo tu avance desde el día uno y comparar tu rendimiento. Motívate a seguir e invita a tus amigos
+        para que te acompañen en cada aventura.
+
+    </section>
+    <section class="section2">
+
+
+
+    </section>
+  </main>
+
+
+
+  <footer width="100%">
+    <div class="container-fluid pie">
+      <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6">
+          <nav class="">
+            <ul class="menu">
+              <li>Legal</li>
+              <li>Cookies</li>
+              <li>Sobre anuncios</li>
+            </ul>
+          </nav>
         </div>
-      </nav>
-    
-      <main>
-      </main>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6">
+          <p>© 2020 Trekk-in SPA.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-<footer>
-    test
-</footer>
 
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>

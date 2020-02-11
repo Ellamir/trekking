@@ -1,0 +1,39 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+
+    @media only screen and (min-width: 767px) {
+        main {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          padding: 1em;
+          grid-row-gap: 100px;
+        }
+      }
+
+}
+
+section {
+    .section1{
+    left: 84px;
+    top: 30%;
+    position: absolute;
+
+        h3 {
+            font-weight: 700;
+            padding-right: 10%;
+            padding-bottom: 1rem;
+        }
+        
+        p {
+            padding-right: 22%;
+            line-height: 1.5rem;
+        }
+    }
+    .section2{
+        background-image: url(../img/bg-price.png);
+        background-repeat: no-repeat;
+    }
+}

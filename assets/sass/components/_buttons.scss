@@ -1,0 +1,56 @@
+//Boton Nav
+
+.boton{
+  border: 0px solid;
+  font-family: $open-sans;
+  
+}
+
+.boton2{
+  background-color: $ball-blue;
+  color: $white;
+  padding: 0.5em;
+  border-radius: 4px;
+  
+
+   &:hover{
+     background-color: $middle-blue;
+     color: $white;
+     text-decoration: none;
+   }
+
+   &:focus{
+     background-color: $gray;
+     color: $white;
+     text-decoration: none;
+   }
+}
+
+.boton1{
+  background-color: $white;
+}
+
+
+//Boton Main
+/*
+.caja1__boton{
+  width: 247px;
+  background-color: #2ab7ca;
+  border: 0px solid;
+  color: white;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  font-family: $raleway;
+  font-weight: $bold;
+
+  &:hover{
+    background-color: $middle-blue;
+  }
+
+  &:focus{
+    background-color: $gray;
+  }
+}
+*/
