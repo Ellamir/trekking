@@ -104,24 +104,25 @@ nav {
 header .franja {
   background-image: url("../img/bg-hero.svg");
   background-repeat: no-repeat;
-  background-position-y: bottom;
+  background-position-y: center;
   background-position-x: right;
   width: 100vw;
   height: 80vh;
 }
 header .franja div.texto {
-  width: 90%;
+  width: 30%;
   padding-left: 1.5rem;
+  text-align-last: justify;
 }
 header .franja div.texto h1 {
   font-weight: 700;
   padding-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: large;
 }
 header .franja div.texto p {
   line-height: 1.5rem;
   padding-bottom: 12rem;
-  font-size: 16;
+  font-size: medium;
 }
 
 section .section1 {
