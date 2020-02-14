@@ -111,109 +111,108 @@ nav .navbar {
 header .franja {
   background-image: url("../img/bg-hero.svg");
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position-y: bottom;
   background-position-x: right;
-  width: 100vw;
+  background-size: 150vw;
   height: 80vh;
 }
-
-/*    
-    background-image: url('../img/bg-hero.svg');
-    background-repeat: no-repeat;
+@media (min-width: 575px) {
+  header .franja {
+    background-size: contain;
     background-position-y: bottom;
     background-position-x: right;
-    background-size: 150vw;
-    //background-size: 500px;
+    background-repeat: no-repeat;
+    min-height: 130vw;
+  }
+}
+@media (min-width: 800px) {
+  header .franja {
+    background-size: contain;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    min-height: 61vw;
+  }
+}
+@media (min-width: 1000px) {
+  header .franja {
+    background-size: contain;
+    background-position-y: top;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    min-height: 130vw;
+  }
+}
+@media (min-width: 1200px) {
+  header .franja {
+    background-size: contain;
+    background-position-y: top;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    min-height: 90vw;
+  }
+}
+header .franja div.texto {
+  width: 80%;
+  padding-left: 1rem;
+}
+@media (min-width: 575px) {
+  header .franja div.texto {
+    width: 60%;
+    padding-left: 3rem;
+  }
+}
+@media (min-width: 800px) {
+  header .franja div.texto {
+    width: 50%;
+    padding-left: 10rem;
+  }
+}
+@media (min-width: 1000px) {
+  header .franja div.texto {
+    width: 40%;
+    padding-left: 15rem;
+  }
+}
+header .franja div.texto h1 {
+  font-weight: 700;
+  padding-bottom: 1rem;
+  font-size: 20;
+}
+@media (min-width: 800px) {
+  header .franja div.texto h1 {
+    padding-bottom: rem;
+    font-size: 35;
+  }
+}
+@media (min-width: 1000px) {
+  header .franja div.texto h1 {
+    padding-bottom: 1rem;
+    font-size: 40;
+  }
+}
+header .franja div.texto p {
+  line-height: 1.5rem;
+  padding-bottom: 51vh;
+  font-size: 16;
+}
+@media (min-width: 575px) {
+  header .franja div.texto p {
+    font-size: 14;
+  }
+}
+@media (min-width: 800px) {
+  header .franja div.texto p {
+    font-size: 20;
+  }
+}
+@media (min-width: 1000px) {
+  header .franja div.texto p {
+    font-size: 30;
+  }
+}
 
-    @include respond-to('small') {
-        background-size: contain;
-        background-position-y: bottom;
-        background-position-x: right;
-        background-repeat: no-repeat;
-        min-height: 130vw;
-      }
-
-    @include respond-to('medium') {
-        background-size: contain;
-        background-position-y: bottom;
-        background-position-x: right;
-        background-repeat: no-repeat;
-        min-height: 61vw;
-      }
-
-    @include respond-to('large') {
-        background-size: contain;
-        background-position-y: top;
-        background-position-x: right;
-        background-repeat: no-repeat;
-        min-height: 130vw;
-      }
-
-      @include respond-to('huge') {
-        background-size: contain;
-        background-position-y: top;
-        background-position-x: right;
-        background-repeat: no-repeat;
-        min-height: 90vw;
-      }
-
-        div.texto{
-            width: 80%;
-            padding-left: 1rem;
-
-            @include respond-to('small') {
-                width: 60%;
-                padding-left: 3rem;    
-              } 
-
-            @include respond-to('medium') {
-                width: 50%;
-                padding-left: 10rem;    
-              }    
-
-            @include respond-to('large') {
-                width: 40%;
-            padding-left: 15rem;
-              }
-
-            h1 {
-                font-weight: 700;
-                padding-bottom: 1rem;
-                font-size: $f-large;
-
-                @include respond-to('medium') {
-                    padding-bottom: rem; 
-                    font-size: $xx-large;
-                }
-
-                @include respond-to('large') {
-                    padding-bottom: 1rem;
-                    font-size: $xxx-large;
-                }
-            }
-
-            p {
-                line-height: 1.5rem;
-                padding-bottom: 51vh;
-                font-size: $f-medium;
-
-                @include respond-to('small') {
-                    font-size: $f-small;
-                }
-
-                @include respond-to('medium') {
-                    font-size: $f-large;
-                }
-                @include respond-to('large') {
-                    font-size: $x-large;
-                }
-            }
-        }    
-
-
-    }  
-}    
-
+/*
     @media screen (min-width: $viewport-medium){
         header div.franja{
             background-image: url('../img/bg-hero.svg');
@@ -290,14 +289,10 @@ main {
 }
 
 main .section1 {
-  width: 98vw;
   text-align: center;
   text-align: -webkit-center;
 }
 main .section1 .parent {
-  display: flex;
-  height: 300px;
-  /* Or whatever */
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -371,7 +366,7 @@ main .franja2 {
   background-position-y: bottom;
   background-position-x: center;
 }
-@media (max-width: 575px) {
+@media (min-width: 575px) {
   main .franja2 {
     background-size: contain;
     background-position-y: bottom;
