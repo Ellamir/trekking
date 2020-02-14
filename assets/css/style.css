@@ -114,7 +114,6 @@ header .franja {
   background-position-y: bottom;
   background-position-x: right;
   background-size: 150vw;
-  height: 80vh;
 }
 @media (min-width: 575px) {
   header .franja {
@@ -476,84 +475,35 @@ main .fondo2 h2 {
     }
     }
     */
-/*
-footer{
-    background-color: $raisin-black;
-    display: flex;
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 35px;
-
-        ul.menu li, p{
-            padding-right: 20px;
-            color: $white;
-            font-size: $f-small;
-            font-family: $open-sans;
-            background-color: $raisin-black;
-            text-align: center;
-            display: flex;
-        }
-
-
-
-
-}*/
-footer {
+.footer {
   background-color: #221D23;
-  color: white;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 1fr;
-  grid-column-gap: 1px;
-  grid-row-gap: 1px;
-}
-footer ul.menu li, footer p {
-  padding-right: 20px;
-  color: #ffffff;
-  font-size: 14;
-  font-family: "Open Sans", sans-serif;
-  background-color: #221D23;
-  text-align: center;
   display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  flex: 50%;
+  flex-wrap: nowrap;
 }
-footer .div1 {
-  grid-area: 1/1/1/1;
-  background-color: #221D23;
+.footer__flex {
+  flex: 50%;
 }
-footer .div2 {
-  grid-area: 2/1/2/1;
-  background-color: #221D23;
+.footer__flex__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-color: yellow;
+  column-width: 30%;
+}
+.footer__flex__items__single {
+  text-align: center;
+  column-width: 33%;
+}
+.footer__flex__copyright {
+  text-align: center;
+  width: 100%;
+  flex: 50%;
+  display: grid;
 }
 
-/*
-
-    @include respond-to('small') {
-      grid-template-columns: 1fr;
-      grid-row-gap: 50px;
-      .div1 { grid-area: 1 / 1 / 1 / 1; }
-      .div2 { grid-area: 2 / 1 / 2 / 1;
-    }
-
-    @include respond-to('medium') {
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 100px;
-
-      .div1 { grid-area: 1 / 1 / 1 / 1; }
-      .div2 { grid-area: 1 / 2 / 1 / 2; }
-    }
-    @include respond-to('large') {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 100px;
-        .div1 { grid-area: 1 / 1 / 1 / 1; }
-      .div2 { grid-area: 1 / 2 / 1 / 2; }
-    }
-
-
-
-
-
-} */
 /*
 @import 'layout/newsletter';
 @import 'layout/sidebar';
