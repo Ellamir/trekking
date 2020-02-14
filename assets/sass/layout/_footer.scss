@@ -1,78 +1,51 @@
-/*
-footer{
-    background-color: $raisin-black;
-    display: flex;
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 35px;
-
-        ul.menu li, p{
-            padding-right: 20px;
-            color: $white;
-            font-size: $f-small;
-            font-family: $open-sans;
-            background-color: $raisin-black;
-            text-align: center;
-            display: flex;
-        }
-        
-    
-
-    
-}*/
-
-footer {
+.footer{
   background-color: $raisin-black;
+  display: flex;
   color: white;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 1fr;
-  grid-column-gap: 1px;
-  grid-row-gap: 1px;
+  
+  flex-direction: row;
+  justify-content: center;
+  flex: 50%;
+  flex-wrap: nowrap;
+  
 
-  ul.menu li, p{
-    padding-right: 20px;
-    color: $white;
-    font-size: $f-small;
-    font-family: $open-sans;
-    background-color: $raisin-black;
-    text-align: center;
-    display: flex;
-  }
+  &__flex{ //dentro de mi flex
+    
+    flex: 50%;
 
-  .div1 { grid-area: 1 / 1 / 1 / 1;
-    background-color: $raisin-black;
-  }
-  .div2 { grid-area: 2 / 1 / 2 / 1;
-    background-color: $raisin-black;
-  }
-}  
-  /*
-
-    @include respond-to('small') {
-      grid-template-columns: 1fr;
-      grid-row-gap: 50px;
-      .div1 { grid-area: 1 / 1 / 1 / 1; }
-      .div2 { grid-area: 2 / 1 / 2 / 1;
-    }
-
-    @include respond-to('medium') {
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 100px;
+    // footer__flex__items
+    //seccion grilla que tiene tres elementos fijos
+    &__items{
+    
       
-      .div1 { grid-area: 1 / 1 / 1 / 1; }
-      .div2 { grid-area: 1 / 2 / 1 / 2; }
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-color: yellow;
+    //width: 50%;
+    column-width: 30%;
+      
+
+      //cada elemento fijo footer__flex__item__single
+      &__single{
+        
+        //column-span: 1;
+        //border: 1px solid rgba(0, 0, 0, 0.8);
+        // padding: 20px;
+       //width: 33%;
+        text-align: center;
+        column-width: 33%;
+      }
+
     }
-    @include respond-to('large') {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 100px;
-        .div1 { grid-area: 1 / 1 / 1 / 1; }
-      .div2 { grid-area: 1 / 2 / 1 / 2; }
+    //footer_flex__copyright
+    //segunda seccion que solo tiene un elemento centrado
+    &__copyright{
+    text-align: center;
+    width: 100%;
+    flex: 50%;
+    display: grid;
     }
 
-
+  }
   
-  
-
-} */
+}
