@@ -1,25 +1,209 @@
+main {
+    width: 100%;
+}
 
+main .section1 {
+    width: 98vw;
+    
+    text-align: center;
+    text-align: -webkit-center;
+    //.section1  {
 
-section {
-
-    .section1{
-    left: 84px;
-    top: 30%;
-    position: absolute;
-    width:30%;
-
-        .section1 img, .section1 div.text {
-            width: 85%;
+            .parent {
             display: flex;
-            justify-self: center;
+            height: 300px; /* Or whatever */
+            display: flex;
             flex-wrap: wrap;
+            align-content: center
         }
-    }
+        
+            .child {
+            width: 80vw;  /* Or whatever */
+            height: auto; /* Or whatever */
+            margin: auto;  /* Magic! */
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            padding-right: 1rem;
+            max-width: 80%;
+        }
+    //}    
+}
 
-    .section2{
-        background-image: url('.../img/bg-price.svg');
-        background-repeat: no-repeat;
-        background-position: top;
-    }
+main .section2{
+    background-image: url('.../img/bg-price.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
     
 }
+/*
+.section__grafico{
+    display: flex;
+    
+    padding-left: 15%;
+    }
+    
+    .section1{
+        text-align: center;
+        top: 30%;
+        // position: absolute;
+        min-width: 318px;
+    
+            .section1 img, .section1 div.text {
+                width: 85%;
+                display: flex;
+                
+                flex-wrap: wrap;
+            }
+        }
+    
+
+
+/* .grafico {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+section {
+    
+    text-align: center;
+    */
+    
+/*
+    .section2{
+        background-image: url('../img/bg-price.svg');
+        background-repeat: no-repeat;
+        background-size: 110%;
+        height: 130vh;
+        background-position: center;
+        }
+*/
+
+main .franja2{
+    text-align: center;
+    background-image: url('../img/bg-price.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    //background-size: 150vw;
+    //background-size: 500px;
+    //align-self: center;
+    //max-height: 30vmax;
+    
+    //min-height: 100vw;
+    //padding-top: 500px;
+    @include respond-to('small') {
+        background-size: contain;
+        background-position-y: bottom;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        min-height: 131vw;
+      }
+
+    @include respond-to('medium') {
+        background-size: contain;
+        background-position-y: top;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        min-height: 61vw;
+      }
+    @include respond-to('large') {
+        background-size: contain;
+        background-position-y: top;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        min-height: 100px;
+      }
+
+      @include respond-to('huge') {
+        background-size: contain;
+        background-position-y: top;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        min-height: 90vw;
+        padding-top: 300px;
+
+      }
+    
+        h2 {
+            padding-top: 300px;
+            color: white;  
+        }
+    }   
+
+    main .fondo2 {
+        text-align: center;
+        text-align: -webkit-center;
+        background-color: $onyx;
+        align-content: center;
+        width: 100%;
+        padding-top: 100px;
+        background-image: url('../img/bg-price.svg');
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: center;
+        background-size: 150vw;
+        
+    
+        h2 {
+            color: white;  
+            vertical-align: bottom;
+            
+        }
+        
+        
+/*
+        .card {
+            width: 80%;
+            max-width: 320px;
+            background-color: white;
+            
+        } 
+        */
+    }
+
+
+
+/*
+
+.fondox{
+    background-image: url('../img/bg-price.svg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    height: 130vh;
+    background-position: center;
+    }
+    
+    @media (max-width: 800px){
+    .fondo2{
+        background-image: url('../img/bg-price.svg');
+        background-size: 318%;
+        height: 115vh;
+        background-position: center;
+        }
+    }
+    
+    @media (max-width: 375px){
+    .fondo2{
+    background-image: url('../img/bg-price.svg');
+    background-size: 775%;
+    height: 210vh;
+    background-position: center;
+    }
+    }
+    
+    .section__price{
+    padding-top: 15%;
+    padding-bottom: 5%;
+    color: white;
+    }
+    
+    @media (max-width: 375px){
+    .section__price{
+    padding-top: 35%;
+    padding-bottom: 15%;
+    color: white;
+    }
+    }
+    */

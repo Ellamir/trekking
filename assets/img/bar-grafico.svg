@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="318"
+   height="165"
+   version="1.1"
+   id="svg34"
+   sodipodi:docname="bar-grafico.svg"
+   viewBox="-10 0 338 175"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata40">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs38" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     id="namedview36"
+     showgrid="false"
+     inkscape:zoom="1.1560606"
+     inkscape:cx="151.04465"
+     inkscape:cy="178.00599"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg34"
+     viewbox-x="-10"
+     viewbox-width="338" />
+  <g
+     class="bar-graph"
+     id="g32"
+     style="fill-rule:evenodd">
+    <path
+       class="a-bar"
+       d="M 10.949,53 H 45.727 V 161 H 10.949 Z M 63.613,0 H 98.391 V 161 H 63.613 Z m 52.663,32 h 34.778 v 129 h -34.778 z"
+       id="path26"
+       inkscape:connector-curvature="0"
+       style="fill:#ee9480" />
+    <path
+       class="b-bar"
+       d="m 168.94,53 h 34.778 V 161 H 168.94 Z m 52.663,-25 h 34.778 v 133 h -34.778 z m 52.664,45 h 34.778 v 88 h -34.778 z"
+       id="path28"
+       inkscape:connector-curvature="0"
+       style="fill:#2ab7ca" />
+    <path
+       class="plane"
+       d="M 3,162.5 H 315.503"
+       id="path30"
+       inkscape:connector-curvature="0"
+       style="stroke:#979797;stroke-width:5;stroke-linecap:square" />
+  </g>
+</svg>

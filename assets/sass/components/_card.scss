@@ -1,0 +1,59 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border: 1px solid $lavender-gray;
+    padding: 2.5rem;
+    justify-content: space-between;
+    min-height: 500px;
+    word-wrap: break-word;
+    margin: 10% 5%;
+    flex-direction: column;
+    
+    
+    @include respond-to('medium'){
+      margin: 0;
+      border-radius: 0.25rem;
+    }
+  
+    &:hover {
+      box-shadow: 5px 10px 11px;
+    }
+  
+    h3 {
+      @include relative-converter(font-size, rem, $f-large, 16);
+  
+      @include respond-to('medium'){
+        @include relative-converter(font-size, rem, $x-large, 16);
+      }
+    }
+  
+    &__precio {
+      @include relative-converter(font-size, rem, $xx-large, 16);
+      font-weight: $bold;
+      border-bottom: 1px solid $lavander-gray;
+  
+      @include respond-to('medium'){
+        @include relative-converter(font-size, rem, $xxx-large, 16);
+      }
+    }
+  
+    &__lista {
+      padding-left: 1.5rem;
+    }
+  
+    &__item {
+      font-family: $alt-typo;
+      @include relative-converter(padding-bottom, rem, $f-large, 16);
+    }
+  
+    &__bottom {
+      border-top: 1px solid $lavender-gray;
+      padding-top: 5%;
+    }
+  
+    &__boton {
+      width: 100%;
+    }
+  
+  }

@@ -37,17 +37,27 @@ $xxxx-large:45;
 $xxx-large:40;
 $xx-large:35;
 $x-large:30;
-$large:20;
-$medium:16;
-$small:14;
+$f-large:20;
+$f-medium:16;
+$f-small:14;
 $x-small:12;
 
 
 /*
 // Breakpoints
 $viewport-xsmall: 375px;
+$viewport-small: 575px;
 $viewport-medium: 768px;
 $viewport-large: 992px;
 $viewport-xlarge: 1200px;
 */
+
+// https://sass-guidelin.es/#responsive-web-design-and-breakpoints
+$breakpoints: (
+  'small': (max-width: 575px),
+  'medium': (min-width: 800px),
+  'large': (min-width: 1000px),
+  'huge': (min-width: 1200px),
+);
+
 

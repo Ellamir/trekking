@@ -29,10 +29,15 @@ h5{
 
 h6{
   //font-size: $large;
-  @include relative-converter(font-size, rem, $large, 16);
+  @include relative-converter(font-size, rem, $f-large, 16);
 }
 
 p{
   //font-size: $medium;
-  @include relative-converter(font-size, rem, $medium, 16);
+  @include relative-converter(font-size, rem, $f-medium, 16);
+}
+
+
+footer{
+  @include relative-converter(font-size, rem, $f-small, 16);
 }
