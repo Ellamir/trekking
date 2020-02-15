@@ -2,48 +2,47 @@
   background-color: $raisin-black;
   display: flex;
   color: white;
-  
-  flex-direction: row;
   justify-content: center;
   flex: 50%;
-  flex-wrap: nowrap;
   
+  flex-direction: column;  // este es el que cambia si es una o dos filas por tamaño
+  @include respond-to('small') {
+    flex-direction: row;
+  }
 
-  &__flex{ //dentro de mi flex
+  // footer__flex
+  // contenedor de dos hijos en modo flex (items y copyright)
+  &__flex{ 
     
     flex: 50%;
 
     // footer__flex__items
     //seccion grilla que tiene tres elementos fijos
     &__items{
-    
-      
+         
       display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-color: yellow;
-    //width: 50%;
-    column-width: 30%;
-      
+      grid-template-columns: 1fr 1fr 1fr;
+      column-width: 30%;
+          
 
       //cada elemento fijo footer__flex__item__single
       &__single{
         
-        //column-span: 1;
-        //border: 1px solid rgba(0, 0, 0, 0.8);
-        // padding: 20px;
-       //width: 33%;
+        padding: 1rem;
         text-align: center;
         column-width: 33%;
       }
 
     }
-    //footer_flex__copyright
+
+    //footer__flex__copyright
     //segunda seccion que solo tiene un elemento centrado
     &__copyright{
+    
+    padding: 1rem;
     text-align: center;
-    width: 100%;
     flex: 50%;
-    display: grid;
+    
     }
 
   }

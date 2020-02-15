@@ -479,10 +479,14 @@ main .fondo2 h2 {
   background-color: #221D23;
   display: flex;
   color: white;
-  flex-direction: row;
   justify-content: center;
   flex: 50%;
-  flex-wrap: nowrap;
+  flex-direction: column;
+}
+@media (min-width: 575px) {
+  .footer {
+    flex-direction: row;
+  }
 }
 .footer__flex {
   flex: 50%;
@@ -490,18 +494,17 @@ main .fondo2 h2 {
 .footer__flex__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border-color: yellow;
   column-width: 30%;
 }
 .footer__flex__items__single {
+  padding: 1rem;
   text-align: center;
   column-width: 33%;
 }
 .footer__flex__copyright {
+  padding: 1rem;
   text-align: center;
-  width: 100%;
   flex: 50%;
-  display: grid;
 }
 
 /*
