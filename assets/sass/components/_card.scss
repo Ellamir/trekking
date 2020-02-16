@@ -5,10 +5,12 @@
     border: 1px solid $lavender-gray;
     padding: 2.5rem;
     justify-content: space-between;
+    fl
     min-height: 500px;
     word-wrap: break-word;
     margin: 10% 5%;
-    flex-direction: column;
+    float: bottom;
+    padding-top: 300px;
     
     
     @include respond-to('medium'){
@@ -17,7 +19,8 @@
     }
   
     &:hover {
-      box-shadow: 5px 10px 11px;
+      box-shadow: 5px 10px 10px !important;
+      color: $onyx;
     }
   
     h3 {
@@ -28,7 +31,7 @@
       }
     }
   
-    &__precio {
+    &__price {
       @include relative-converter(font-size, rem, $xx-large, 16);
       font-weight: $bold;
       border-bottom: 1px solid $lavander-gray;
@@ -38,12 +41,12 @@
       }
     }
   
-    &__lista {
-      padding-left: 1.5rem;
+    &__list {
+      padding-left: 1rem;
     }
   
     &__item {
-      font-family: $alt-typo;
+      font-family: $raleway;
       @include relative-converter(padding-bottom, rem, $f-large, 16);
     }
   
@@ -52,7 +55,7 @@
       padding-top: 5%;
     }
   
-    &__boton {
+    &__boton2 {
       width: 100%;
     }
   

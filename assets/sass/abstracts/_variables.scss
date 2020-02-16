@@ -54,6 +54,7 @@ $viewport-xlarge: 1200px;
 
 // https://sass-guidelin.es/#responsive-web-design-and-breakpoints
 $breakpoints: (
+  //por defecto esta para x-small / tamaño iphone5
   'small': (min-width: 575px),
   'medium': (min-width: 800px),
   'large': (min-width: 1000px),

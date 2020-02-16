@@ -127,7 +127,7 @@ header .franja {
 @media (min-width: 800px) {
   header .franja {
     background-size: contain;
-    background-position-y: bottom;
+    background-position-y: top;
     background-position-x: right;
     background-repeat: no-repeat;
     min-height: 61vw;
@@ -283,21 +283,35 @@ header .franja div.texto p {
     }    
 }
 */
-main {
+.main {
   width: 100%;
-}
-
-main .section1 {
-  text-align: center;
-  text-align: -webkit-center;
-}
-main .section1 .parent {
-  display: flex;
-  flex-wrap: wrap;
   align-content: center;
+  text-align: center;
+  /*
+
+      &__section2{
+      background-image: url('.../img/bg-price2.svg');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      text-align: center;
+      }
+      */
 }
-main .section1 .child {
-  width: 80vw;
+.main__section1 {
+  flex-shrink: inherit;
+  padding: 5%;
+}
+.main__section1 h2 {
+  text-align: center;
+}
+.main__section1__parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__section1__parent__child {
+  max-width: 50%;
   /* Or whatever */
   height: auto;
   /* Or whatever */
@@ -306,64 +320,28 @@ main .section1 .child {
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 1rem;
-  max-width: 80%;
+  display: flex;
+}
+.main__section1__parent__child .texto h3 {
+  font-size: 20;
+  text-align: left;
+}
+.main__section1__parent__child .texto p {
+  width: 35%;
+  font-size: 16;
+  display: flex-wrap;
 }
 
-main .section2 {
-  background-image: url(".../img/bg-price.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  text-align: center;
-}
-
-/*
-.section__grafico{
-    display: flex;
-
-    padding-left: 15%;
-    }
-
-    .section1{
-        text-align: center;
-        top: 30%;
-        // position: absolute;
-        min-width: 318px;
-
-            .section1 img, .section1 div.text {
-                width: 85%;
-                display: flex;
-
-                flex-wrap: wrap;
-            }
-        }
-
-
-
-/* .grafico {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1rem;
-}
-
-section {
-
-    text-align: center;
-    */
-/*
-    .section2{
-        background-image: url('../img/bg-price.svg');
-        background-repeat: no-repeat;
-        background-size: 110%;
-        height: 130vh;
-        background-position: center;
-        }
-*/
 main .franja2 {
   text-align: center;
   background-image: url("../img/bg-price.svg");
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: center;
+  background-size: 150vw;
+  font-size: 14;
+  color: w;
+  min-height: 100vw;
 }
 @media (min-width: 575px) {
   main .franja2 {
@@ -372,34 +350,37 @@ main .franja2 {
     background-position-x: right;
     background-repeat: no-repeat;
     min-height: 131vw;
+    font-size: 16;
   }
 }
 @media (min-width: 800px) {
   main .franja2 {
     background-size: contain;
-    background-position-y: top;
+    background-position-y: bottom;
     background-position-x: right;
     background-repeat: no-repeat;
     min-height: 61vw;
+    font-size: 20;
   }
 }
 @media (min-width: 1000px) {
   main .franja2 {
     background-size: contain;
-    background-position-y: top;
+    background-position-y: bottom;
     background-position-x: right;
     background-repeat: no-repeat;
-    min-height: 100px;
+    min-height: 130vw;
+    font-size: 30;
   }
 }
 @media (min-width: 1200px) {
   main .franja2 {
     background-size: contain;
-    background-position-y: top;
+    background-position-y: bottom;
     background-position-x: right;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     min-height: 90vw;
-    padding-top: 300px;
+    padding-bottom: 300px;
   }
 }
 main .franja2 h2 {
@@ -413,68 +394,19 @@ main .fondo2 {
   background-color: #333745;
   align-content: center;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 50px;
   background-image: url("../img/bg-price.svg");
   background-repeat: no-repeat;
-  background-position-y: top;
+  background-position-y: center;
   background-position-x: center;
-  background-size: 150vw;
-  /*
-          .card {
-              width: 80%;
-              max-width: 320px;
-              background-color: white;
-
-          } 
-          */
+  background-size: 100vw;
+  padding-bottom: 50px;
 }
 main .fondo2 h2 {
   color: white;
   vertical-align: bottom;
 }
 
-/*
-
-.fondox{
-    background-image: url('../img/bg-price.svg');
-    background-repeat: no-repeat;
-    background-size: 110%;
-    height: 130vh;
-    background-position: center;
-    }
-
-    @media (max-width: 800px){
-    .fondo2{
-        background-image: url('../img/bg-price.svg');
-        background-size: 318%;
-        height: 115vh;
-        background-position: center;
-        }
-    }
-
-    @media (max-width: 375px){
-    .fondo2{
-    background-image: url('../img/bg-price.svg');
-    background-size: 775%;
-    height: 210vh;
-    background-position: center;
-    }
-    }
-
-    .section__price{
-    padding-top: 15%;
-    padding-bottom: 5%;
-    color: white;
-    }
-
-    @media (max-width: 375px){
-    .section__price{
-    padding-top: 35%;
-    padding-bottom: 15%;
-    color: white;
-    }
-    }
-    */
 .footer {
   background-color: #221D23;
   display: flex;

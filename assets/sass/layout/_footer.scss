@@ -6,8 +6,8 @@
   flex: 50%;
   
   flex-direction: column;  // este es el que cambia si es una o dos filas por tamaño
-  @include respond-to('small') {
-    flex-direction: row;
+  @include respond-to(small){ 
+        flex-direction: row;
   }
 
   // footer__flex
@@ -32,7 +32,6 @@
         text-align: center;
         column-width: 33%;
       }
-
     }
 
     //footer__flex__copyright

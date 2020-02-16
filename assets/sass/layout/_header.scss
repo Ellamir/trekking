@@ -28,7 +28,7 @@ header{
 
     @include respond-to('medium') {
         background-size: contain;
-        background-position-y: bottom;
+        background-position-y: top;
         background-position-x: right;
         background-repeat: no-repeat;
         min-height: 61vw;
