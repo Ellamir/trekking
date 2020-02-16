@@ -113,16 +113,15 @@ header .franja {
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: right;
-  background-size: 100vh;
-  height: 120vh;
+  background-size: 200vw;
+  height: 125vh;
 }
 @media (min-width: 575px) {
   header .franja {
     background-size: contain;
-    background-position-y: bottom;
+    background-position-y: top;
     background-position-x: right;
     background-repeat: no-repeat;
-    min-height: 130vw;
   }
 }
 @media (min-width: 800px) {
@@ -149,7 +148,7 @@ header .franja {
     background-position-y: top;
     background-position-x: right;
     background-repeat: no-repeat;
-    min-height: 90vw;
+    min-height: 65vw;
   }
 }
 header .franja div.texto {
@@ -213,56 +212,6 @@ header .franja div.texto p {
 }
 
 /*
-    @media screen (min-width: $viewport-medium){
-        header div.franja{
-            background-image: url('../img/bg-hero.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 200vh;
-            background-position: right bottom;    
-
-
-        }
-
-
-        @media screen (max-width: $viewport-xsmall){
-        header div.franja{
-        background-image: url('../img/bg-hero.svg');
-        background-repeat: no-repeat;
-        background-size: 133%;
-        height: 92vh;
-        background-position: right bottom;
-        }
-
-        div.texto{
-            width: 80%;
-            padding-left: 1.5rem;
-
-            h1 {
-                font-weight: 700;
-                padding-bottom: 1rem;
-                font-size: medium;
-            }
-
-            p {
-                line-height: 1.5rem;
-                padding-bottom: 51vh;
-                font-size: small;
-            }
-
-        }
-
-
-
-
-
-
-
-
-
-
-}
-
 @media screen (min-width: $viewport-medium){
     header .franja div.texto{
         width: 45%;
@@ -283,12 +232,9 @@ header .franja div.texto p {
         }
     }    
 }
-*/
+ */
 .section1 {
   text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 3rem;
 }
 .section1 h2 {
   padding-bottom: 2rem;
@@ -319,8 +265,6 @@ header .franja div.texto p {
   padding-bottom: 1rem;
 }
 .section1__parent__child__texto p {
-  padding-left: 15%;
-  padding-right: 15%;
   font-size: 16;
   text-align: center;
 }
@@ -329,100 +273,69 @@ header .franja div.texto p {
     box-shadow: 50px 50px blue;
     transition-property: all;
     } */
-/*
-
-    &__section2{
-    background-image: url('.../img/bg-price2.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    text-align: center;
-    }
-    */
-main .franja2 {
+.franja2 {
+  min-height: 8rem;
   text-align: center;
   background-image: url("../img/bg-price.svg");
   background-repeat: no-repeat;
   background-position-y: top;
-  background-position-x: center;
-  background-size: 180vw;
-  font-size: 14;
+  background-position-x: right;
+  background-size: 200vw;
   color: white;
-  min-height: 100vw;
 }
 @media (min-width: 575px) {
-  main .franja2 {
-    background-size: contain;
+  .franja2 {
+    background-size: 150vw;
     background-position-y: bottom;
     background-position-x: right;
     background-repeat: no-repeat;
-    min-height: 131vw;
+    min-height: 10rem;
     font-size: 16;
   }
-  main .franja2 .deck1 {
+  .franja2 .deck1 {
     display: none;
   }
 }
 @media (min-width: 800px) {
-  main .franja2 {
-    background-size: contain;
-    background-position-y: bottom;
+  .franja2 {
+    background-size: 100vw;
+    background-position-y: top;
     background-position-x: right;
     background-repeat: no-repeat;
-    min-height: 61vw;
-    font-size: 20;
-  }
-  main .franja2 .deck1 {
-    display: none;
+    min-height: 12rem;
   }
 }
 @media (min-width: 1000px) {
-  main .franja2 {
-    background-size: contain;
+  .franja2 {
+    background-size: 100vw;
     background-position-y: top;
     background-position-x: right;
     background-repeat: no-repeat;
-    min-height: 130vw;
-    font-size: 30;
-  }
-  main .franja2 .deck2 {
-    display: none;
+    min-height: 12rem;
   }
 }
 @media (min-width: 1200px) {
-  main .franja2 {
-    background-size: contain;
+  .franja2 {
+    background-size: 100vw;
     background-position-y: top;
     background-position-x: right;
-    background-repeat: repeat-x;
-    min-height: 90vw;
-    padding-bottom: 300px;
+    background-repeat: no-repeat;
+    min-height: 15rem;
   }
-  main .franja2 .deck2 {
-    display: none;
-  }
-}
-main .franja2 h2 {
-  padding-top: 600px;
-  color: white;
 }
 
-main .fondo2 {
+.fondo2 {
   text-align: center;
   text-align: -webkit-center;
   background-color: #333745;
-  align-content: center;
-  width: 100%;
-  padding-top: 50px;
-  background-image: url("../img/bg-price.svg");
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: center;
-  background-size: 100vw;
-  padding-bottom: 50px;
+  vertical-align: top;
+  margin-bottom: 0px;
+  padding-bottom: 5rem;
+  color: black;
 }
-main .fondo2 h2 {
+.fondo2 h2 {
   color: white;
-  vertical-align: bottom;
+  padding-bottom: 50px;
 }
 
 .footer {

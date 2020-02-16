@@ -1,7 +1,6 @@
 
 header{
 
-
     .franja{
       //  background-image: url('../img/bg-hero.svg');
       //   background-repeat: no-repeat;
@@ -14,16 +13,16 @@ header{
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: right;
-    background-size: 100vh;
-    height: 120vh;
+    background-size: 200vw;
+    height: 125vh;
     //background-size: 500px;
  
     @include respond-to('small') {
         background-size: contain;
-        background-position-y: bottom;
+        background-position-y: top;
         background-position-x: right;
         background-repeat: no-repeat;
-        min-height: 130vw;
+       // min-height: 130vw;
       }
 
     @include respond-to('medium') {
@@ -47,7 +46,7 @@ header{
         background-position-y: top;
         background-position-x: right;
         background-repeat: no-repeat;
-        min-height: 90vw;
+        min-height: 65vw;
       }
         
         div.texto{
@@ -106,57 +105,8 @@ header{
 
     }  
 }    
-/*
-    @media screen (min-width: $viewport-medium){
-        header div.franja{
-            background-image: url('../img/bg-hero.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 200vh;
-            background-position: right bottom;    
-                 
 
-        }
-        
-        
-        @media screen (max-width: $viewport-xsmall){
-        header div.franja{
-        background-image: url('../img/bg-hero.svg');
-        background-repeat: no-repeat;
-        background-size: 133%;
-        height: 92vh;
-        background-position: right bottom;
-        }
-
-        div.texto{
-            width: 80%;
-            padding-left: 1.5rem;
-                        
-            h1 {
-                font-weight: 700;
-                padding-bottom: 1rem;
-                font-size: medium;
-            }
-            
-            p {
-                line-height: 1.5rem;
-                padding-bottom: 51vh;
-                font-size: small;
-            }
-            
-        }
-        
-
-        
-
-
-
-
-
-
-
-}
- 
+ /*
 @media screen (min-width: $viewport-medium){
     header .franja div.texto{
         width: 45%;
@@ -177,4 +127,4 @@ header{
         }
     }    
 }
-*/ 
+ */

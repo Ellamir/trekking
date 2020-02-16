@@ -1,37 +1,26 @@
 
-/*
-
-    &__section2{
-    background-image: url('.../img/bg-price2.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    text-align: center;
-    }
-    */
-
-
-
-main .franja2{
+.franja2{
+    min-height: 8rem;
     text-align: center;
     background-image: url('../img/bg-price.svg');
     background-repeat: no-repeat;
     background-position-y: top;
-    background-position-x: center;
-    background-size: 180vw;
+    background-position-x: right;
+    background-size: 200vw;
     //background-size: 500px;
     //align-self: center;
     //max-height: 30vmax;
-    font-size: $f-small;
+    //font-size: $f-small;
     color: white;
-    
-    min-height: 100vw;
+
     //padding-top: 500px;
+
     @include respond-to('small') {
-        background-size: contain;
+        background-size: 150vw;
         background-position-y: bottom;
         background-position-x: right;
         background-repeat: no-repeat;
-        min-height: 131vw;
+        min-height: 10rem;
         font-size: $f-medium;
         .deck1{
             display: none;
@@ -40,68 +29,49 @@ main .franja2{
       }
 
     @include respond-to('medium') {
-        background-size: contain;
-        background-position-y: bottom;
-        background-position-x: right;
-        background-repeat: no-repeat;
-        min-height: 61vw;
-        font-size: $f-large;
-        .deck1{
-            display: none;
-        }
-
-      }
-    @include respond-to('large') {
-        background-size: contain;
+      background-size: 100vw;
         background-position-y: top;
         background-position-x: right;
         background-repeat: no-repeat;
-        min-height: 130vw;
-        //width: 150%;
-        font-size: $x-large;
-        .deck2{
-            display: none;
-        }
+        min-height: 12rem;
+
       }
+     
+    @include respond-to('large') {
+        background-size: 100vw;
+        background-position-y: top;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        min-height: 12rem;
+    }
+
 
       @include respond-to('huge') {
-        background-size: contain;
+        background-size: 100vw;
         background-position-y: top;
         background-position-x: right;
-        background-repeat: repeat-x;
-        min-height: 90vw;
-        padding-bottom: 300px;
-        .deck2{
-            display: none;
-        }
+        background-repeat: no-repeat;
+        min-height: 15rem;
 
-      }
+    }
     
-        h2 {
-            padding-top: 600px;
-            color: white;  
-        }
-}   
+}  
 
-    main .fondo2 {
+    .fondo2 {
         text-align: center;
         text-align: -webkit-center;
         background-color: $onyx;
-        align-content: center;
-        width: 100%;
-        padding-top: 50px;
-        background-image: url('../img/bg-price.svg');
-        background-repeat: no-repeat;
-        background-position-y: center;
-        background-position-x: center;
-        background-size: 100vw;
-        padding-bottom: 50px;
+        vertical-align: top;
+        margin-bottom: 0px;
+        padding-bottom: 5rem;
         
-    
-        h2 {
-            color: white;  
-            vertical-align: bottom;
-            
+        color: black;
+
+        h2{
+            color: white;
+            padding-bottom: 50px;
         }
-    }    
+    }
+      
+   
         
