@@ -42,6 +42,9 @@
             
                 &__svg{
                     display: flex;
+                    .barras{
+                    animation: fadeIn 1s infinite alternate;
+                    }
                 }
 
                 &__texto{
@@ -61,8 +64,8 @@
             }
         }    
     }
-
-
+    
+      
 //
 /*.card:hover {
     box-shadow: 50px 50px blue;

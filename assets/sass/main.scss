@@ -1,18 +1,13 @@
 //@import 'vendors/node_modules/bootstrap/scss/bootstrap.scss';
+@import 'abstracts/animations';
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'config/reset';
 @import 'config/base';
 @import 'config/typography';
-//@import 'abstracts/grid';
 @import 'components/buttons';
 @import 'layout/nav';
 @import 'layout/header';
 @import 'layout/body';
 @import 'layout/body2';
 @import 'layout/footer';
-/*
-@import 'layout/newsletter';
-@import 'layout/sidebar';
-
-*/
