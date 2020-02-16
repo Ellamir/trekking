@@ -14,8 +14,8 @@ header{
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: right;
-    background-size: 150vw;
-    //height: 80vh;
+    background-size: 100vh;
+    height: 120vh;
     //background-size: 500px;
  
     @include respond-to('small') {

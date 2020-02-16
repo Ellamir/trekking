@@ -1,141 +1,60 @@
-.main {
-    width: 100%;
-    align-content: center;
+.section1 {
     text-align: center;
-    height: unset;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
 
-    &__section1 {
-        max-height: 100vh;
-    h2 {text-align: center;}
-    //flex-shrink: inherit;
-    padding: 5%;
-
+    h2{
+        padding-bottom: 2rem;
+    }
+     
         &__parent {
             display: flex;
-            //height: 300px; /* Or whatever */
+            //border: 2px solid black;
+            text-align: center;
+            //font-size: 3rem;
+            flex-direction: column;
+            padding-bottom: 3rem;
+
+        @include respond-to(medium){ 
             flex-direction: row;
-            //flex-flow: row wrap;
-            content: none;
-            align-items: center;
-        
+      }
            
             &__child {
-                max-width: 50%;  /* Or whatever */
-                height: auto; /* Or whatever */
-                margin: auto;  /* Magic! */
-                padding-top:1vh ;
-                padding-bottom:1vh ;
-                padding-right: 1rem;
-                display: flex;
+                width: 100%;
+                //border: 1px solid black;
+                //background-color: coral;
+                color: $raisin-black;
+                display: flex-wrap;
+                padding-bottom: 3rem;
             
-                .texto{
-                    h3{font-size: $f-large;
-                    text-align: left;}
+                &__svg{
+
+                }
+
+                &__texto{
+                    
+                    text-align: center;
+                    h3{
+                    font-size: $f-large;
+                    text-align: center;
+                    padding-bottom: 1rem;
+                    }
                     p{
-                    width: 35%;
+                    padding-left: 15%;
+                    padding-right: 15%;
                     font-size: $f-medium;
-                    display: flex-wrap;
+                    text-align: center;
                     }
                 }
 
             }
         }    
     }
-        
-/*
-
-    &__section2{
-    background-image: url('.../img/bg-price2.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    text-align: center;
-    }
-    */
 
 
-}
-
-
-main .franja2{
-    text-align: center;
-    background-image: url('../img/bg-price.svg');
-    background-repeat: no-repeat;
-    background-position-y: top;
-    background-position-x: center;
-    background-size: 180vw;
-    //background-size: 500px;
-    //align-self: center;
-    //max-height: 30vmax;
-    font-size: $f-small;
-    color: white;
-    
-    min-height: 100vw;
-    //padding-top: 500px;
-    @include respond-to('small') {
-        background-size: contain;
-        background-position-y: bottom;
-        background-position-x: right;
-        background-repeat: no-repeat;
-        min-height: 131vw;
-        font-size: $f-medium;
-
-
-      }
-
-    @include respond-to('medium') {
-        background-size: contain;
-        background-position-y: bottom;
-        background-position-x: right;
-        background-repeat: no-repeat;
-        min-height: 61vw;
-        font-size: $f-large;
-
-      }
-    @include respond-to('large') {
-        background-size: contain;
-        background-position-y: top;
-        background-position-x: right;
-        background-repeat: no-repeat;
-        min-height: 130vw;
-        //width: 150%;
-        font-size: $x-large;
-      }
-
-      @include respond-to('huge') {
-        background-size: contain;
-        background-position-y: top;
-        background-position-x: right;
-        background-repeat: repeat-x;
-        min-height: 90vw;
-        padding-bottom: 300px;
-
-      }
-    
-        h2 {
-            padding-top: 600px;
-            color: white;  
-        }
-}   
-
-    main .fondo2 {
-        text-align: center;
-        text-align: -webkit-center;
-        background-color: $onyx;
-        align-content: center;
-        width: 100%;
-        padding-top: 50px;
-        background-image: url('../img/bg-price.svg');
-        background-repeat: no-repeat;
-        background-position-y: center;
-        background-position-x: center;
-        background-size: 100vw;
-        padding-bottom: 50px;
-        
-    
-        h2 {
-            color: white;  
-            vertical-align: bottom;
-            
-        }
-    }    
-        
+//
+/*.card:hover {
+    box-shadow: 50px 50px blue;
+    transition-property: all;
+    } */
