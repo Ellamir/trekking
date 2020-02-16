@@ -1,27 +1,36 @@
+
 .card {
     display: flex;
     flex-direction: column;
-    background-color: $white;
+    //background-color: $white;
     border: 1px solid $lavender-gray;
     padding: 2.5rem;
     justify-content: space-between;
+    color: $onyx;
     
-    min-height: 500px;
+    //min-height: 500px;
     word-wrap: break-word;
     margin: 10% 5%;
-    float: bottom;
+    float: top;
     padding-top: 300px;
     
-    
-    @include respond-to('medium'){
+    @include respond-to('small'){
       margin: 0;
       border-radius: 0.25rem;
+      max-width: 300px;
     }
-  
+    
+    @include respond-to('medium'){
+      padding: 50px;
+      margin: 0;
+      border-radius: 0.25rem;
+      max-width: 400px;
+    }
+
     &:hover {
-      box-shadow: 5px 10px 10px !important;
-      color: $white;
-    }
+      box-shadow: 10px 10px white;
+      transition-property: all;
+      }
   
     h3 {
       @include relative-converter(font-size, rem, $f-large, 16);
@@ -34,7 +43,7 @@
     &__price {
       @include relative-converter(font-size, rem, $xx-large, 16);
       font-weight: $bold;
-      border-bottom: 1px solid $lavander-gray;
+      border-bottom: 1px solid $lavender-gray;
   
       @include respond-to('medium'){
         @include relative-converter(font-size, rem, $xxx-large, 16);
@@ -60,3 +69,19 @@
     }
   
   }
+
+
+  /*
+
+  .box-shadow {
+    width: 30px;                
+    height: 30px;
+    box-shadow: 1px 1px 25px;
+    color:$onyx;
+}
+
+.box-shadow:hover  {
+    color: #fff;
+    box-shadow: 1px 1px 25px;
+}
+*/

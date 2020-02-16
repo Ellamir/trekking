@@ -329,6 +329,102 @@ header .franja div.texto p {
     box-shadow: 50px 50px blue;
     transition-property: all;
     } */
+/*
+
+    &__section2{
+    background-image: url('.../img/bg-price2.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    }
+    */
+main .franja2 {
+  text-align: center;
+  background-image: url("../img/bg-price.svg");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 180vw;
+  font-size: 14;
+  color: white;
+  min-height: 100vw;
+}
+@media (min-width: 575px) {
+  main .franja2 {
+    background-size: contain;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    min-height: 131vw;
+    font-size: 16;
+  }
+  main .franja2 .deck1 {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  main .franja2 {
+    background-size: contain;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    min-height: 61vw;
+    font-size: 20;
+  }
+  main .franja2 .deck1 {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  main .franja2 {
+    background-size: contain;
+    background-position-y: top;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    min-height: 130vw;
+    font-size: 30;
+  }
+  main .franja2 .deck2 {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  main .franja2 {
+    background-size: contain;
+    background-position-y: top;
+    background-position-x: right;
+    background-repeat: repeat-x;
+    min-height: 90vw;
+    padding-bottom: 300px;
+  }
+  main .franja2 .deck2 {
+    display: none;
+  }
+}
+main .franja2 h2 {
+  padding-top: 600px;
+  color: white;
+}
+
+main .fondo2 {
+  text-align: center;
+  text-align: -webkit-center;
+  background-color: #333745;
+  align-content: center;
+  width: 100%;
+  padding-top: 50px;
+  background-image: url("../img/bg-price.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 100vw;
+  padding-bottom: 50px;
+}
+main .fondo2 h2 {
+  color: white;
+  vertical-align: bottom;
+}
+
 .footer {
   background-color: #221D23;
   display: flex;

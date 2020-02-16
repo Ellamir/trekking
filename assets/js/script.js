@@ -1,7 +1,7 @@
-// animated burguer
-$('.burger').click(function () {
-  $(this).toggleClass('open');
-});
+/// animated burguer
+//$('.burger').click(function () {
+//  $(this).toggleClass('open');
+//});
 
 /* Smooth scroll*/
 $(document).ready(function(){
@@ -28,4 +28,22 @@ $(document).ready(function(){
       } // End if
     });
   });
+
+  
+  /// card shadow drop on hover
+  $(document).ready(function() {
+    // executes when HTML-Document is loaded and DOM is ready
+   console.log("document is ready");
+     
+   
+     $( ".card" ).hover(
+     function() {
+       $(this).addClass('shadow bg-white').css('cursor', 'pointer'); 
+     }, function() {
+       $(this).removeClass('shadow bg-white');
+     }
+   );
+     
+   // document ready  
+   });
   

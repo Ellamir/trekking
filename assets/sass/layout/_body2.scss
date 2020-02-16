@@ -1,0 +1,107 @@
+
+/*
+
+    &__section2{
+    background-image: url('.../img/bg-price2.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    }
+    */
+
+
+
+main .franja2{
+    text-align: center;
+    background-image: url('../img/bg-price.svg');
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+    background-size: 180vw;
+    //background-size: 500px;
+    //align-self: center;
+    //max-height: 30vmax;
+    font-size: $f-small;
+    color: white;
+    
+    min-height: 100vw;
+    //padding-top: 500px;
+    @include respond-to('small') {
+        background-size: contain;
+        background-position-y: bottom;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        min-height: 131vw;
+        font-size: $f-medium;
+        .deck1{
+            display: none;
+        }
+
+      }
+
+    @include respond-to('medium') {
+        background-size: contain;
+        background-position-y: bottom;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        min-height: 61vw;
+        font-size: $f-large;
+        .deck1{
+            display: none;
+        }
+
+      }
+    @include respond-to('large') {
+        background-size: contain;
+        background-position-y: top;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        min-height: 130vw;
+        //width: 150%;
+        font-size: $x-large;
+        .deck2{
+            display: none;
+        }
+      }
+
+      @include respond-to('huge') {
+        background-size: contain;
+        background-position-y: top;
+        background-position-x: right;
+        background-repeat: repeat-x;
+        min-height: 90vw;
+        padding-bottom: 300px;
+        .deck2{
+            display: none;
+        }
+
+      }
+    
+        h2 {
+            padding-top: 600px;
+            color: white;  
+        }
+}   
+
+    main .fondo2 {
+        text-align: center;
+        text-align: -webkit-center;
+        background-color: $onyx;
+        align-content: center;
+        width: 100%;
+        padding-top: 50px;
+        background-image: url('../img/bg-price.svg');
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: center;
+        background-size: 100vw;
+        padding-bottom: 50px;
+        
+    
+        h2 {
+            color: white;  
+            vertical-align: bottom;
+            
+        }
+    }    
+        
