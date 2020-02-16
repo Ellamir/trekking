@@ -93,7 +93,7 @@ main .franja2{
       }
     @include respond-to('large') {
         background-size: contain;
-        background-position-y: bottom;
+        background-position-y: top;
         background-position-x: right;
         background-repeat: no-repeat;
         min-height: 130vw;
@@ -103,7 +103,7 @@ main .franja2{
 
       @include respond-to('huge') {
         background-size: contain;
-        background-position-y: bottom;
+        background-position-y: top;
         background-position-x: right;
         background-repeat: repeat-x;
         min-height: 90vw;
@@ -130,6 +130,7 @@ main .franja2{
         background-position-x: center;
         background-size: 100vw;
         padding-bottom: 50px;
+        
     
         h2 {
             color: white;  
